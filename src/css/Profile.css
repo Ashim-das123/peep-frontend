@@ -1,0 +1,89 @@
+.profile{
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.profile-frame{
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile-pic{
+    height: fit-content;
+    
+}
+.profile-pic>img{
+    width: 160px;;
+    height: 160px;
+    object-fit: cover;
+    /* object-fit: contain; ata kora chil cover ta nije korlam*/
+    border-radius: 100px;
+}
+.profile-data{
+    text-align: left;
+}
+.profile-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.profile-gallery img{
+    width:30%;
+    margin: 10px;
+    /* cover ta nije add krlam */
+    object-fit: cover;
+}
+
+.followBtn {
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 13px 25px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: none;
+    color: white;
+    background: #0dff00;
+    transition: all 0.25s ease;
+    margin-left: 20px;
+  }
+  
+  .followBtn:hover {
+    transform: scale(1.1);
+    /* box-shadow: 0 10px 20px -10px #62ff00; */
+  }
+  .changePic{
+    background-color: #fff;
+    border-radius: 20px;
+
+  }
+  .changePic div{
+    padding: 10px 80px;
+  }
+  .upload-btn{
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-weight: bolder;
+    font-size: 15px;
+  }
+
+
+  @media screen and (max-width:600px){
+    .profile-pic>img{
+      width: 88px;
+      height: 88px;
+      object-fit: cover;
+      border-radius: 100px;
+  }
+    .profile-data>h1{
+      font-size: 20px;
+    }
+
+     .profile-gallery img{
+      width: 40%;
+
+    } 
+     .profile-gallery{
+      margin-left: 30px;
+    }
+
+  }
